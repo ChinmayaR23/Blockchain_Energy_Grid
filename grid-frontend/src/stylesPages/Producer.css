@@ -1,0 +1,40 @@
+/* Producer.module.css */
+
+
+.Prodmodule {
+  background-color: #ffffff; /* Change background color of container */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.totalUnits {
+  margin-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producer & Consumer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Producer</h2>
+    <form id="producerForm">
+        <input type="number" id="producerUnits" placeholder="Enter units to generate" required>
+        <button type="submit">Generate Units</button>
+    </form>
+
+    <h2>Consumer</h2>
+    <form id="consumerForm">
+        <input type="text" id="consumerAddress" placeholder="Enter prosumer address" required>
+        <input type="number" id="consumerUnits" placeholder="Enter units to consume" required>
+        <button type="submit">Consume Units</button>
+    </form>
+
+    <script>
+        document.getElementById("producerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const units = document.getElementById("producerUnits").value;
+            // Call the generateUnits function of the Producer contract
+            // Add code to interact with the contract through Web3.js or Ethers.js
+        });
+
+        document.getElementById("consumerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const prosumerAddress = document.getElementById("consumerAddress").value;
+            const units = document.getElementById("consumerUnits").value;
+            // Call the consumeUnits function of the Consumer contract
+            // Add code to interact with the contract through Web3.js or Ethers.js
+        });
+    </script>
+</body>
+</html>

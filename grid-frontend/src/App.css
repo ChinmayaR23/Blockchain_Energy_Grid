@@ -1,0 +1,43 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.intro-section, .features-section {
+  margin-bottom: 30px;
+}
+
+.intro-section h2, .features-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.features-section ul {
+  list-style-type: none;
+}
+
+.features-section li {
+  margin-bottom: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}

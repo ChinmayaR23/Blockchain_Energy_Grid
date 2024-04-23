@@ -1,0 +1,44 @@
+/* Header.css */
+
+/* Existing styles */
+body {
+    margin: 0;
+}
+
+main {
+    margin: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: rebeccapurple;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+
+.navbar__title {
+    margin-right: auto;
+    font-size: 150%;
+    padding: 12px 16px;
+}
+
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* New styles for links */
+.navbar__item a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color */
+    transition: color 0.3s ease; /* Add smooth color transition on hover */
+    font-family: Helvetica;
+    font-weight: 300;
+}
+
+.navbar__item a:hover {
+    color: #ffd700; /* Change link color on hover */
+}
